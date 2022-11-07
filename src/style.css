@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgba(39, 32, 68, 0.9);
 }
 
 .container {
@@ -50,6 +51,35 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+main {
+  background-color: white;
+}
+main img {
+  max-width: 100%;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 
 footer {
   color: white;
@@ -61,16 +91,21 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
 }
-footer section {
+section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+.grid-two-col {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-three-col-first-narrow {
   grid-template-columns: 2fr 3fr 3fr;
-  grid-gap: 60px;
 }
 footer h3 {
   font-weight: 700;
@@ -100,7 +135,7 @@ footer p {
   header {
     padding: 60px 0;
   }
-  heade h1 {
+  header h1 {
     font-size: 48px;
   }
   header h2 {
@@ -108,5 +143,15 @@ footer p {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+  section {
+    padding: 30px;
+  }
+  main h3 {
+    font-size: 32px;
   }
 }
