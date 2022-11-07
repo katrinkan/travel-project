@@ -51,7 +51,52 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+footer section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  grid-gap: 60px;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
