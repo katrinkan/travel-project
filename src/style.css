@@ -3,10 +3,6 @@ body {
   background-color: rgba(39, 32, 68, 0.9);
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/header.jpg");
@@ -74,6 +70,20 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
 main p {
   font-size: 16px;
   line-height: 1.5;
@@ -93,20 +103,10 @@ footer {
   background-position: center;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-.grid-two-col {
-  grid-template-columns: 1fr 1fr;
-}
-.grid-three-col-first-narrow {
-  grid-template-columns: 2fr 3fr 3fr;
-}
+
 footer h3 {
   font-weight: 700;
   font-size: 20px;
@@ -131,6 +131,56 @@ footer p {
   line-height: 1.5;
   opacity: 0.6;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-two-col {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-three-col-first-narrow {
+  grid-template-columns: 2fr 3fr 3fr;
+}
+.secondary-section {
+  background-color: #f8f8f8;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 30px 10px 20px 10px;
+}
+.card-img {
+  max-height: 250px;
+}
+.button {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -144,14 +194,15 @@ footer p {
   header h3 {
     font-size: 12px;
   }
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 24px;
-  }
+
   section {
     padding: 30px;
   }
   main h3 {
     font-size: 32px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
   }
 }
