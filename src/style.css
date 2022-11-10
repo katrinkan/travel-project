@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgba(39, 32, 68, 0.9);
+  background-color: #dcccb2;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 header {
@@ -47,6 +49,10 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+header a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 main {
   background-color: white;
 }
@@ -61,6 +67,7 @@ main h2 {
   color: #272044;
   opacity: 0.3;
   text-transform: uppercase;
+  padding-bottom: 10px;
   margin: 0;
 }
 main h3 {
@@ -69,6 +76,7 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+  padding-bottom: 30px;
 }
 main h4 {
   font-weight: 700;
@@ -94,8 +102,8 @@ main p {
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
+      rgba(147, 136, 118, 0.9),
+      rgba(147, 136, 118, 0.9)
     ),
     url("../images/footer.jpg");
   background-repeat: no-repeat;
@@ -104,7 +112,7 @@ footer {
 }
 section {
   margin: 0 auto;
-  padding: 100px;
+  padding: 60px 100px;
 }
 
 footer h3 {
@@ -157,7 +165,6 @@ footer p {
 }
 .card {
   background-color: white;
-  margin: 30px 0;
 }
 .card-header.grid {
   grid-gap: 0;
@@ -175,9 +182,7 @@ footer p {
   width: 100%;
   aspect-ratio: 1/1;
 }
-.insta-embed {
-  margin: 30px 0;
-}
+
 .button {
   display: block;
   color: white;
@@ -188,10 +193,19 @@ footer p {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #462cb3;
+  background-color: #db8845;
   text-decoration: none;
 }
+.button:hover {
+  cursor: pointer;
+  color: #db8845;
+  background-color: #f8f8f8;
+}
+
 @media (max-width: 960px) {
+  body {
+    margin: 0;
+  }
   header {
     padding: 60px 0;
   }
@@ -211,6 +225,7 @@ footer p {
   main h3 {
     font-size: 32px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 24px;
@@ -223,5 +238,8 @@ footer p {
   }
   .embed {
     aspect-ratio: 16/9;
+  }
+  .gallery {
+    display: none;
   }
 }
